@@ -1,0 +1,309 @@
+/* ============================================================
+   RESPONSIVE.CSS â€” Responsive overrides for "A Universe Made for You"
+   ============================================================ */
+
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+   LARGE SCREENS (â‰¥1200px)
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+@media (min-width: 1200px) {
+  .hero-content { padding: 4rem 2rem; }
+  .reasons-grid .col { max-width: calc(10% - 0.6rem); }
+}
+
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+   TABLETS (768px â€“ 1199px)
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+@media (max-width: 1199px) {
+  .timeline-container::before { left: 30px; }
+  .timeline-item { flex-direction: column !important; padding-left: 65px; }
+  .timeline-dot  { left: 30px; top: 1.5rem; }
+  .timeline-content { width: 100%; margin: 0 !important; }
+
+  .beauty-card { height: 260px; }
+  .music-player { width: 230px; }
+}
+
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+   TABLETS PORTRAIT & LARGE MOBILE (576px â€“ 991px)
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+@media (max-width: 991px) {
+  section { padding: 80px 0; }
+
+  .navbar-collapse {
+    background: rgba(16,13,19,0.97);
+    border: 1px solid rgba(232,166,184,0.15);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-top: 0.5rem;
+    backdrop-filter: blur(20px);
+  }
+  .nav-link { padding: 0.8rem 1rem !important; border-bottom: 1px solid rgba(232,166,184,0.08); }
+  .nav-link:last-child { border-bottom: none; }
+
+  .hero-name { font-size: clamp(2.2rem, 7vw, 4rem); }
+  .hero-subtitle { font-size: 1.1rem; }
+
+  .countdown-number { font-size: clamp(2rem, 5vw, 3.5rem); }
+  .countdown-card { padding: 1.8rem 1.2rem; }
+
+  .beauty-card { height: 240px; margin-bottom: 1rem; }
+
+  .letter-paper { padding: 2rem; }
+
+  .gift-box { width: 130px; height: 115px; }
+  .gift-lid  { width: 150px; }
+  .gift-body { width: 130px; height: 105px; }
+
+  .music-player {
+    width: 210px; bottom: 1.5rem; right: 1.5rem;
+  }
+  #backToTop { right: 5rem; bottom: 1.5rem; }
+}
+
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+   MOBILE (â‰¤575px)
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+@media (max-width: 575px) {
+  section { padding: 70px 0; }
+
+  .section-title  { font-size: clamp(1.6rem, 6vw, 2.5rem); }
+  .section-subtitle { font-size: 1rem; margin-bottom: 2.5rem; }
+
+  /* Hero */
+  .hero-content { padding: 1.5rem; }
+  .hero-name    { font-size: clamp(1.8rem, 8vw, 3rem); }
+  .hero-tagline { font-size: 0.95rem; }
+  .btn-hero     { padding: 0.85rem 2rem; font-size: 0.75rem; }
+
+  /* Countdown */
+  .countdown-card   { padding: 1.2rem 0.8rem; border-radius: 14px; }
+  .countdown-number { font-size: 2rem; }
+  .countdown-label  { font-size: 0.6rem; letter-spacing: 1.5px; }
+
+  /* Gallery */
+  .polaroid-card    { padding: 8px 8px 14px; }
+  .polaroid-caption { font-size: 0.88rem; }
+
+  /* Lightbox nav */
+  .lightbox-prev { left: 0.5rem; }
+  .lightbox-next { right: 0.5rem; }
+
+  /* Beauty cards — 2x2 grid compact for mobile */
+  .beauty-grid { --bs-gutter-x: 10px !important; --bs-gutter-y: 10px !important; }
+  .beauty-card { height: 145px !important; margin-bottom: 0 !important; }
+  .beauty-card-front, .beauty-card-back {
+    padding: 0.75rem 0.5rem !important;
+    border-radius: 14px !important;
+  }
+  .beauty-card-front i {
+    font-size: 1.45rem !important;
+    margin-bottom: 0.35rem !important;
+  }
+  .beauty-card-front h4 {
+    font-size: 0.78rem !important;
+    margin-bottom: 0.2rem !important;
+    line-height: 1.2 !important;
+  }
+  .beauty-card-front p.flip-hint {
+    font-size: 0.55rem !important;
+    letter-spacing: 1px !important;
+    margin-bottom: 0 !important;
+  }
+  .beauty-card-back {
+    padding: 0.75rem 0.5rem !important;
+  }
+  .beauty-card-back p {
+    font-size: 0.68rem !important;
+    line-height: 1.35 !important;
+    margin: 0 !important;
+  }
+
+  /* Timeline */
+  .timeline-container::before { left: 16px; }
+  .timeline-item  { padding-left: 45px; }
+  .timeline-dot   { left: 16px; width: 14px; height: 14px; top: 1.2rem; }
+  .timeline-content { padding: 1.2rem; border-radius: 12px; }
+
+  /* Special Memories — Centered Card View in Mobile */
+  .memories-carousel-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .memories-track {
+    padding: 15px calc((100vw - ((100vw - 46px) / 1.5)) / 2) 20px;
+    gap: 14px;
+    align-items: center;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0 calc((100vw - ((100vw - 46px) / 1.5)) / 2);
+  }
+  .memory-card-item {
+    flex: 0 0 calc((100vw - 46px) / 1.5);
+    width: calc((100vw - 46px) / 1.5);
+    max-width: none;
+    scroll-snap-align: center !important;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .memory-img-wrap {
+    margin: 0 auto;
+  }
+  .memory-portrait-img {
+    object-position: center center !important;
+    object-fit: cover !important;
+  }
+  .memory-attractive-quote {
+    font-size: 0.78rem;
+    text-align: center;
+  }
+  .carousel-nav-btn { display: none; } /* Natural touch swipe on mobile */
+
+  /* Letter — Compact Phone View */
+  .love-letter-section { padding: 24px 0 15px !important; min-height: auto !important; }
+  .love-letter-section .text-center.mb-5 { margin-bottom: 0.6rem !important; }
+  .letter-pretitle { font-size: 0.82rem !important; margin-bottom: 0.15rem !important; letter-spacing: 2px !important; }
+  .letter-page-title { font-size: 1.35rem !important; margin-bottom: 0.15rem !important; }
+  .letter-page-subtitle { font-size: 0.78rem !important; margin-bottom: 0.3rem !important; }
+  .section-divider { margin: 4px auto 8px !important; width: 40px !important; }
+  .luxury-letter-stationery { padding: 1.4rem 1.1rem 1rem !important; border-radius: 16px !important; }
+  .letter-seal-badge { width: 36px !important; height: 36px !important; top: -18px !important; }
+  .wax-heart-seal { font-size: 0.95rem !important; }
+  .letter-salutation-text { font-size: 1.15rem !important; margin-bottom: 0.5rem !important; }
+  .letter-quote-callout { padding: 0.45rem 0.75rem !important; margin: 0.45rem 0 0.65rem !important; border-left-width: 2px !important; }
+  .callout-quote { font-size: 0.82rem !important; line-height: 1.45 !important; }
+  .letter-paragraphs { margin-bottom: 0.4rem !important; }
+  .letter-para-line { font-size: 0.84rem !important; line-height: 1.5 !important; margin-bottom: 0.45rem !important; }
+  .letter-closing-block { margin-top: 0.75rem !important; padding-top: 0.5rem !important; }
+  .letter-gold-flourish { font-size: 0.68rem !important; letter-spacing: 4px !important; margin-bottom: 0.2rem !important; }
+  .letter-closing-line { font-size: 0.82rem !important; margin-bottom: 0.15rem !important; }
+  .letter-signature-cursive { font-size: 1.35rem !important; margin-bottom: 0.1rem !important; }
+  .letter-sign-date { font-size: 0.62rem !important; letter-spacing: 1px !important; }
+  .letter-footer-ribbon { margin-top: 0.75rem !important; padding: 0.35rem 0.8rem !important; gap: 8px !important; }
+  .ribbon-text { font-size: 0.72rem !important; }
+  .letter-page-footer { margin-top: 0.5rem !important; }
+  .letter-footer-romantic-note { margin-top: 0.25rem !important; padding-bottom: 1rem !important; }
+  .letter-footer-romantic-note p { font-size: 0.68rem !important; }
+
+  /* Compact Bottom Navigation Buttons on Phone */
+  .page-nav-row { margin-top: 0.8rem !important; gap: 8px !important; padding-bottom: 0.4rem !important; }
+  .btn-prev-page, .page-nav-btn {
+    padding: 0.42rem 0.95rem !important;
+    font-size: 0.68rem !important;
+    letter-spacing: 1px !important;
+    min-height: 36px !important;
+    border-radius: 25px !important;
+    gap: 0.35rem !important;
+  }
+  .page-nav-btn i, .btn-prev-page i { font-size: 0.75rem !important; }
+
+  /* Reasons */
+  .reason-card  { margin-bottom: 0.4rem; }
+  .reason-front { font-size: 1.1rem; }
+  .reason-back  { font-size: 0.65rem; }
+
+  /* Gift box */
+  .gift-box  { width: 110px; height: 100px; }
+  .gift-lid  { width: 130px; height: 35px; }
+  .gift-body { width: 110px; height: 95px; font-size: 2.2rem; }
+
+  /* Celebration — Move Cake Down & Ensure Flames are Fully Visible */
+  .celebration-section {
+    padding-top: 50px !important;
+  }
+  .birthday-cake-container {
+    margin-top: 45px !important;
+    padding-top: 35px !important;
+    margin-bottom: 1.8rem !important;
+  }
+  .celebration-title { font-size: clamp(1.6rem, 7vw, 3rem); }
+  .celebration-sub   { font-size: 1.1rem; }
+  .cake              { width: 120px; margin: 0 auto; }
+  .cake-tier-top     { width: 75px !important; height: 32px !important; }
+  .cake-tier-mid     { width: 97px !important; height: 40px !important; }
+  .cake-tier-bot     { width: 120px !important; height: 48px !important; }
+  .candles-row {
+    top: -38px !important;
+    gap: 7px !important;
+  }
+  .candle {
+    width: 9px !important;
+    height: 28px !important;
+  }
+  .flame {
+    width: 11px !important;
+    height: 18px !important;
+    top: -19px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    border-radius: 50% 50% 35% 35% / 60% 60% 40% 40% !important;
+    box-shadow:
+      0 0 6px rgba(255, 230, 100, 0.95),
+      0 0 14px rgba(255, 150, 0, 0.85),
+      0 0 24px rgba(255, 60, 0, 0.7) !important;
+  }
+  .candle:nth-child(3) .flame {
+    height: 20px !important;
+    top: -21px !important;
+  }
+  #backToTop { right: 4.5rem; bottom: 1.5rem; }
+}
+
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+   EXTRA SMALL (â‰¤375px)
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+@media (max-width: 375px) {
+  .hero-name { font-size: 1.8rem; }
+  .countdown-number { font-size: 1.6rem; }
+  .section-title { font-size: 1.5rem; }
+  .beauty-card { height: 200px; }
+  .music-player { width: calc(100vw - 2rem); right: 1rem; }
+}
+
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+   LANDSCAPE ORIENTATION (SHORT SCREENS)
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+@media (max-height: 500px) and (orientation: landscape) {
+  #hero { min-height: auto; padding: 100px 0 60px; }
+  .hero-content { padding: 1rem; }
+  .hero-name { font-size: 2.5rem; }
+  section { padding: 60px 0; }
+}
+
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+   TOUCH DEVICE OPTIMIZATIONS
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+@media (hover: none) {
+  /* Disable hover-only effects, always show captions */
+  .polaroid-caption { opacity: 1; }
+  .secret-heart { opacity: 0.5; }
+
+  /* Make touch targets bigger */
+  .nav-link  { padding: 1rem 1rem !important; }
+  .btn-hero,
+  .open-gift-btn,
+  #openEnvelopeBtn,
+  #blowCandlesBtn { min-height: 48px; }
+
+  .lightbox-prev,
+  .lightbox-next { width: 44px; height: 44px; }
+}
+
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+   HIGH DPI / RETINA
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hero-bg { image-rendering: high-quality; }
+  .polaroid-img { image-rendering: -webkit-optimize-contrast; }
+}
+
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+   PRINT
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+@media print {
+  #mainNav, #musicPlayer, #backToTop,
+  .rose-petals-container, .stars-container,
+  #lightbox, .confetti-piece, .floating-heart { display: none !important; }
+  body { background: white; color: black; }
+  section { padding: 40px 0; page-break-inside: avoid; }
+  .section-title { color: #333; }
+}

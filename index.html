@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- SEO Meta -->
+  <title>A Universe Made for You ✦ Happy Birthday</title>
+  <meta name="description" content="A premium romantic birthday surprise website — crafted with love, just for you." />
+  <meta name="robots" content="noindex, nofollow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="A Universe Made for You ✦ Happy Birthday" />
+  <meta property="og:description" content="A premium romantic birthday surprise, crafted with love." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=Poppins:wght@300;400;500;600&family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5.3 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <style>
+    /* ── NO NAVBAR – page-nav buttons ── */
+    body { padding-top: 0 !important; }
+
+    /* Page-nav button at the bottom of every section */
+    .page-nav-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 1.5rem;
+      padding: 0.6rem 1.8rem;
+      background: linear-gradient(135deg, rgba(64,21,38,0.95), rgba(130,30,60,0.9));
+      border: 1px solid rgba(255,140,170,0.55);
+      border-radius: 50px;
+      color: var(--cream, #FFF4EB);
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.35s ease;
+      box-shadow: 0 0 20px rgba(220,50,90,0.35), 0 4px 14px rgba(0,0,0,0.5);
+    }
+    .page-nav-btn:hover {
+      background: linear-gradient(135deg, #E8A6B8, #D9B77E);
+      color: #100D13;
+      border-color: #D9B77E;
+      box-shadow: 0 0 32px rgba(255,140,170,0.65), 0 6px 20px rgba(0,0,0,0.6);
+      transform: translateY(-2px) scale(1.03);
+      text-decoration: none;
+    }
+    .page-nav-btn i { font-size: 0.85rem; }
+
+    /* ── LOVE LETTER PARAGRAPHS ── */
+    .letter-para-line {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1rem, 2.5vw, 1.22rem);
+      color: #ffe6ee;
+      line-height: 1.9;
+      margin-bottom: 1.2rem;
+      text-align: left;
+    }
+    .letter-para-line:first-child { margin-top: 0.5rem; }
+    .letter-para-line .emoji-icon {
+      font-style: normal;
+      margin-right: 0.3rem;
+    }
+    .letter-salutation-text {
+      font-family: 'Dancing Script', cursive;
+      font-size: clamp(1.5rem, 4vw, 2.2rem);
+      color: #ff9fb4;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      text-shadow: 0 0 25px rgba(255,130,155,0.5);
+    }
+    .letter-closing-block {
+      margin-top: 2rem;
+      text-align: right;
+      border-top: 1px solid rgba(255,140,170,0.25);
+      padding-top: 1.2rem;
+    }
+    .letter-closing-line {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.05rem;
+      color: #ffd4e0;
+      margin-bottom: 0.3rem;
+    }
+    .letter-signature-cursive {
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.6rem;
+      color: #E8A6B8;
+      text-shadow: 0 0 18px rgba(232,166,184,0.55);
+    }
+
+    /* ── PHONE RESPONSIVE OVERRIDES (COMPACT VIEW) ── */
+    @media (max-width: 576px) {
+      .page-nav-row {
+        margin-top: 0.8rem !important;
+        gap: 8px !important;
+        padding-bottom: 0.4rem !important;
+      }
+      .page-nav-btn, .btn-prev-page {
+        margin-top: 0 !important;
+        padding: 0.42rem 0.95rem !important;
+        font-size: 0.68rem !important;
+        letter-spacing: 1px !important;
+        min-height: 36px !important;
+        border-radius: 25px !important;
+        gap: 0.35rem !important;
+      }
+      .page-nav-btn i, .btn-prev-page i { font-size: 0.75rem !important; }
+
+      .letter-para-line {
+        font-size: 0.84rem !important;
+        line-height: 1.5 !important;
+        margin-bottom: 0.45rem !important;
+      }
+      .letter-salutation-text {
+        font-size: 1.15rem !important;
+        margin-bottom: 0.5rem !important;
+      }
+      .letter-closing-block {
+        margin-top: 0.75rem !important;
+        padding-top: 0.5rem !important;
+      }
+      .letter-closing-line {
+        font-size: 0.82rem !important;
+        margin-bottom: 0.15rem !important;
+      }
+      .letter-signature-cursive {
+        font-size: 1.35rem !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════════
+       INTRO OVERLAY
+  ══════════════════════════════════════════════════════ -->
+  <div id="introOverlay" role="status" aria-label="Loading your surprise...">
+    <p class="intro-logo">✦ A Universe Made for You ✦</p>
+    <p class="intro-subtitle-overlay">Preparing your special moment...</p>
+    <div class="intro-progress">
+      <div class="intro-progress-bar"></div>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ══════════════════════════════════════════════════════
+         PAGE 1 — HERO SECTION
+    ══════════════════════════════════════════════════════ -->
+    <section id="hero" class="page-view-section active-page" aria-label="Welcome">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="stars-container" aria-hidden="true"></div>
+      <div class="rose-petals-container" aria-hidden="true"></div>
+
+      <div class="hero-content text-center">
+        <p class="hero-tagline">— For the one who lights my world —</p>
+
+        <h1 class="hero-name" id="heroName">My Beautiful Girl</h1>
+
+        <p class="hero-subtitle">To the most beautiful soul in my universe...</p>
+        <p class="hero-sub2">Today, the world celebrates someone who makes my world more beautiful.</p>
+
+        <!-- Named "next" button -->
+        <button id="openSurpriseBtn" class="btn-hero" aria-label="Open your birthday surprise">
+          <span>Open Your Surprise ♡</span>
+        </button>
+
+        <div class="page-nav-row mt-4">
+          <button type="button" class="page-nav-btn" data-target="countdown">
+            <i class="bi bi-clock me-1"></i> Begin the Countdown <i class="bi bi-arrow-right ms-1"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         PAGE 2 — 11:59:57 ➔ 12:00:00 MIDNIGHT COUNTDOWN
+    ══════════════════════════════════════════════════════ -->
+    <section id="countdown" class="page-view-section" aria-label="Midnight countdown clock">
+      <div class="container text-center">
+        <h2 class="section-title">The Midnight Countdown</h2>
+        <p class="section-subtitle">Counting down to 12:00:00 AM — the exact moment your special day begins</p>
+
+        <!-- Live Clock Pill -->
+        <div class="d-inline-block mb-4">
+          <span id="clockTimeDisplay" class="clock-live-pill">
+            🕛 11:59:57 PM
+          </span>
+        </div>
+
+        <!-- 3 Digital Clock Cards -->
+        <div id="countdownDisplay" class="row justify-content-center g-3 mb-4">
+          <div class="col-4 col-sm-3 col-md-2">
+            <div class="clock-digit-card">
+              <span class="countdown-number" id="cHours">11</span>
+              <span class="countdown-label">HOURS</span>
+            </div>
+          </div>
+          <div class="col-4 col-sm-3 col-md-2">
+            <div class="clock-digit-card">
+              <span class="countdown-number" id="cMinutes">59</span>
+              <span class="countdown-label">MINUTES</span>
+            </div>
+          </div>
+          <div class="col-4 col-sm-3 col-md-2">
+            <div class="clock-digit-card">
+              <span class="countdown-number" id="cSeconds">57</span>
+              <span class="countdown-label">SECONDS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 12 O'Clock Birthday Arrival Message -->
+        <div id="birthdayMessage" class="birthday-arrived" role="alert" aria-live="polite">
+          <p class="midnight-struck-tag">🕛 IT'S 12 O'CLOCK! 🕛</p>
+          <h2 class="shimmer-text">✨ HAPPY BIRTHDAY LAKSHA ✨</h2>
+          <p class="hero-subtitle mt-2">The clock struck midnight! Today, the entire universe celebrates you, Laksha. ❤️</p>
+
+          <div class="mt-3">
+            <button id="replayClockBtn" class="open-gift-btn" style="font-size:0.75rem; padding: 0.5rem 1.8rem;">
+              <i class="bi bi-arrow-counterclockwise me-1"></i> Replay 11:59:57 Countdown
+            </button>
+          </div>
+        </div>
+
+        <!-- Page Navigation Row -->
+        <div class="page-nav-row">
+          <button type="button" class="btn-prev-page" data-target="hero">
+            <i class="bi bi-arrow-left"></i> Welcome
+          </button>
+          <button type="button" class="page-nav-btn" data-target="memoriesSection">
+            <i class="bi bi-images me-1"></i> Memories <i class="bi bi-arrow-right ms-1"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         PAGE 3 — OUR BEAUTIFUL LITTLE MEMORIES (LUXURY PHOTO GALLERY)
+    ══════════════════════════════════════════════════════ -->
+    <section id="memoriesSection" class="special-memories-section page-view-section" aria-label="Special Memories">
+      <div class="memories-header text-center">
+        <h2 class="memories-main-title">Special Memories</h2>
+        <div class="memories-gold-line"></div>
+        <p class="memories-sub-title">Swipe for more ✦</p>
+      </div>
+
+      <!-- Horizontal Photo Strip -->
+      <div class="memories-carousel-wrapper">
+        <button id="carouselPrevBtn" class="carousel-nav-btn prev-btn" aria-label="Previous">&#8249;</button>
+        <div id="memoriesTrack" class="memories-track">
+          <!-- Cards injected by gallery.js -->
+        </div>
+        <button id="carouselNextBtn" class="carousel-nav-btn next-btn" aria-label="Next">&#8250;</button>
+      </div>
+
+      <!-- Page Navigation Row -->
+      <div class="page-nav-row">
+        <button type="button" class="btn-prev-page" data-target="countdown">
+          <i class="bi bi-arrow-left"></i> Countdown
+        </button>
+        <button type="button" class="page-nav-btn" data-target="letterSection">
+          <i class="bi bi-envelope-heart me-1"></i> Letter 💌 <i class="bi bi-arrow-right ms-1"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         PAGE 4 — A LETTER FROM MY HEART (DEDICATED LETTER PAGE)
+    ══════════════════════════════════════════════════════ -->
+    <section id="letterSection" class="love-letter-section page-view-section" aria-label="Birthday Love Letter">
+      <div class="container">
+
+        <div class="text-center mb-5">
+          <span class="letter-pretitle">— For My Forever Favourite —</span>
+          <h2 class="letter-page-title">A Letter From My Heart</h2>
+          <p class="letter-page-subtitle">Written with every feeling I could never say out loud ✦</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-10">
+            <div class="luxury-letter-stationery">
+
+              <div class="letter-seal-badge">
+                <span class="wax-heart-seal">♥</span>
+              </div>
+
+              <div class="letter-content-inner">
+
+                <h3 class="letter-salutation-text">Happy Birthday, My Beautiful Girl 🌹❤️</h3>
+
+                <!-- Lovable Quote Callout -->
+                <div class="letter-quote-callout">
+                  <p class="callout-quote">"In a universe full of stars, you are my brightest light."</p>
+                </div>
+
+                <!-- Letter Body — Paragraph Format with Emojis -->
+                <div class="letter-paragraphs">
+
+                  <p class="letter-para-line">
+                    <span class="emoji-icon">🌙</span>
+                    As the clock struck 12:00 AM, my heart filled with pure love for you. You came into my life like the sweetest surprise, and every moment with you is a blessing I cherish deeply.
+                  </p>
+
+                  <p class="letter-para-line">
+                    <span class="emoji-icon">✨</span>
+                    Your smile lights up my whole universe, and your kind heart makes you breathtaking inside and out. Everything about you is uniquely, wonderfully you.
+                  </p>
+
+                  <p class="letter-para-line">
+                    <span class="emoji-icon">🎂</span>
+                    Happy Birthday, my beautiful girl! May every candle you blow make your sweetest dreams come true. You deserve all the joy in this universe.
+                  </p>
+
+                </div>
+
+                <!-- Closing Signature & Dedicated Letter Footer Card -->
+                <div class="letter-closing-block">
+                  <div class="letter-gold-flourish">✦ ✦ ✦</div>
+                  <p class="letter-closing-line">With all my love and my whole heart,</p>
+                  <p class="letter-signature-cursive">Forever Yours <span class="letter-heart-beat">💖</span></p>
+                  <p class="letter-sign-date">Written for your unforgettable birthday</p>
+                </div>
+
+              </div><!-- /.letter-content-inner -->
+
+              <!-- Beautiful Letter Footer Ribbon inside Stationery -->
+              <div class="letter-footer-ribbon">
+                <span class="ribbon-flower">🌸</span>
+                <span class="ribbon-text">Every word sealed with unconditional love</span>
+                <span class="ribbon-flower">🌸</span>
+              </div>
+
+            </div><!-- /.luxury-letter-stationery -->
+          </div>
+        </div>
+
+        <!-- Dedicated Letter Page Footer / Navigation Bar -->
+        <div class="letter-page-footer">
+          <div class="page-nav-row">
+            <button type="button" class="btn-prev-page" data-target="memoriesSection">
+              <i class="bi bi-arrow-left"></i> Memories
+            </button>
+            <button type="button" class="page-nav-btn" data-target="beauty">
+              <i class="bi bi-stars me-1"></i> Next <i class="bi bi-arrow-right ms-1"></i>
+            </button>
+          </div>
+          <div class="letter-footer-romantic-note">
+            <p>✦ Tap next to reveal what makes you beautiful ✦</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         PAGE 5 — WHAT MAKES YOU SO BEAUTIFUL (COMPLIMENTS)
+    ══════════════════════════════════════════════════════ -->
+    <section id="beauty" class="page-view-section" aria-label="What makes you beautiful">
+      <div class="container">
+        <h2 class="section-title">What Makes You So Beautiful</h2>
+        <p class="section-subtitle">Every little thing about you is magic — tap each card to discover why</p>
+        <div class="section-divider"></div>
+
+        <div class="beauty-grid row g-2 g-md-4">
+
+          <div class="col-6 col-md-4">
+            <div class="beauty-card" data-index="0" role="button" tabindex="0" aria-label="Your Smile">
+              <div class="beauty-card-inner">
+                <div class="beauty-card-front">
+                  <i class="bi bi-emoji-smile beauty-icon"></i>
+                  <h4 class="beauty-title">Your Smile</h4>
+                  <p class="flip-hint">— tap to discover —</p>
+                </div>
+                <div class="beauty-card-back">
+                  <p class="beauty-message">😊 Your smile has the power to light up an entire room. It's the most beautiful thing I've ever seen, and I fall for it every single time.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4">
+            <div class="beauty-card" data-index="1" role="button" tabindex="0" aria-label="Your Beautiful Eyes">
+              <div class="beauty-card-inner">
+                <div class="beauty-card-front">
+                  <i class="bi bi-eye beauty-icon"></i>
+                  <h4 class="beauty-title">Your Beautiful Eyes</h4>
+                  <p class="flip-hint">— tap to discover —</p>
+                </div>
+                <div class="beauty-card-back">
+                  <p class="beauty-message">✨ In your eyes I see a universe full of kindness, dreams, and warmth. I could get lost in them forever and never want to be found.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4">
+            <div class="beauty-card" data-index="2" role="button" tabindex="0" aria-label="Your Personality">
+              <div class="beauty-card-inner">
+                <div class="beauty-card-front">
+                  <i class="bi bi-stars beauty-icon"></i>
+                  <h4 class="beauty-title">Your Personality</h4>
+                  <p class="flip-hint">— tap to discover —</p>
+                </div>
+                <div class="beauty-card-back">
+                  <p class="beauty-message">💫 You are one of a kind. Your uniqueness, your thoughts, the way you see the world — it's all so beautifully you, and I love every part of it.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4">
+            <div class="beauty-card" data-index="3" role="button" tabindex="0" aria-label="Your Kindness">
+              <div class="beauty-card-inner">
+                <div class="beauty-card-front">
+                  <i class="bi bi-heart beauty-icon"></i>
+                  <h4 class="beauty-title">Your Kindness</h4>
+                  <p class="flip-hint">— tap to discover —</p>
+                </div>
+                <div class="beauty-card-back">
+                  <p class="beauty-message">🌸 The way you care for others, the gentleness in your heart — it's rare and beautiful. Your kindness makes the world a better place.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4">
+            <div class="beauty-card" data-index="4" role="button" tabindex="0" aria-label="Your Laughter">
+              <div class="beauty-card-inner">
+                <div class="beauty-card-front">
+                  <i class="bi bi-music-note-beamed beauty-icon"></i>
+                  <h4 class="beauty-title">Your Laughter</h4>
+                  <p class="flip-hint">— tap to discover —</p>
+                </div>
+                <div class="beauty-card-back">
+                  <p class="beauty-message">🎶 Your laughter is my favourite sound in the entire world. It's pure, genuine, and it makes everything feel lighter and brighter.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4">
+            <div class="beauty-card" data-index="5" role="button" tabindex="0" aria-label="Your Beautiful Heart">
+              <div class="beauty-card-inner">
+                <div class="beauty-card-front">
+                  <i class="bi bi-heart-fill beauty-icon"></i>
+                  <h4 class="beauty-title">Your Beautiful Heart</h4>
+                  <p class="flip-hint">— tap to discover —</p>
+                </div>
+                <div class="beauty-card-back">
+                  <p class="beauty-message">❤️ Your heart is the most beautiful thing about you. Pure, caring, and full of love — I feel so lucky to have a place in it.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Page Navigation Row -->
+        <div class="page-nav-row">
+          <button type="button" class="btn-prev-page" data-target="letterSection">
+            <i class="bi bi-arrow-left"></i> Letter
+          </button>
+          <button type="button" class="page-nav-btn" data-target="celebration">
+            <i class="bi bi-cake2 me-1"></i> Surprise 🎂 <i class="bi bi-arrow-right ms-1"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         PAGE 6 — FINAL BIRTHDAY CELEBRATION & CAKE
+    ══════════════════════════════════════════════════════ -->
+    <section id="celebration" class="celebration-section page-view-section" aria-label="Birthday celebration">
+      <div class="container">
+
+        <!-- Birthday Cake -->
+        <div class="birthday-cake-container">
+          <div class="cake float-anim" aria-label="Birthday cake" role="img">
+            <!-- Candles -->
+            <div class="candles-row" aria-label="Birthday candles">
+              <div class="candle" aria-label="Candle 1"><div class="flame" aria-hidden="true"></div></div>
+              <div class="candle" aria-label="Candle 2"><div class="flame" aria-hidden="true"></div></div>
+              <div class="candle" aria-label="Candle 3"><div class="flame" aria-hidden="true"></div></div>
+              <div class="candle" aria-label="Candle 4"><div class="flame" aria-hidden="true"></div></div>
+              <div class="candle" aria-label="Candle 5"><div class="flame" aria-hidden="true"></div></div>
+            </div>
+            <!-- Cake Tiers -->
+            <div class="cake-tier cake-tier-top mx-auto">
+              <div class="cake-icing"></div>
+            </div>
+            <div class="cake-tier cake-tier-mid mx-auto">
+              <div class="cake-icing"></div>
+            </div>
+            <div class="cake-tier cake-tier-bot mx-auto">
+              <div class="cake-icing"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blow Candles Button -->
+        <button id="blowCandlesBtn" class="btn-blow-candles" aria-label="Blow the birthday candles">
+          🎂 Blow the Candles ✨
+        </button>
+
+        <!-- Celebration Message -->
+        <div class="celebration-message">
+          <h1 class="celebration-title" id="finalName">Happy Birthday,</h1>
+          <h2 class="celebration-sub">My Beautiful Girl! 🌹</h2>
+
+          <p class="final-letter-text">
+            No matter how many birthdays come and go, I hope you always remember how special you are.
+            Keep smiling, keep shining, and never stop being the wonderful person you are.
+            You deserve all the happiness in the universe. 🌟
+          </p>
+
+          <p class="final-sign heart-pulse">With All My Love. ♡</p>
+        </div>
+
+        <!-- Page Navigation Row -->
+        <div class="page-nav-row">
+          <button type="button" class="btn-prev-page" data-target="beauty">
+            <i class="bi bi-arrow-left"></i> Compliments
+          </button>
+          <button type="button" class="page-nav-btn" data-target="hero">
+            <i class="bi bi-arrow-repeat"></i> Replay From Beginning ↺
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Background music audio element (plays in background) -->
+  <audio id="bgMusic" loop preload="auto">
+    <source src="assets/music/romantic.mp3" type="audio/mpeg" />
+  </audio>
+
+  <!-- ══════════════════════════════════════════════════════
+       MODALS
+  ══════════════════════════════════════════════════════ -->
+
+  <!-- Special Memory Message Modal -->
+  <div class="modal fade" id="memoryModal" tabindex="-1"
+       aria-labelledby="memoryModalTitle" aria-modal="true" role="dialog">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content memory-modal-content">
+        <div class="modal-header border-0 pb-0">
+          <h5 class="modal-title text-gold" id="memoryModalTitle">
+            <i class="bi bi-heart-fill text-rose me-2"></i>A Note For You ♡
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center p-4">
+          <div class="memory-modal-img-wrap mb-3">
+            <img id="memoryModalImg" src="" alt="Memory" class="img-fluid rounded-4 shadow" style="max-height: 240px; object-fit: cover;" />
+          </div>
+          <p id="memoryModalQuote" class="font-romantic text-rose fst-italic fs-5 mb-3"></p>
+          <p id="memoryModalBody" class="font-romantic text-cream fs-6 lh-lg"></p>
+        </div>
+        <div class="modal-footer border-0 pt-0 justify-content-center">
+          <button type="button" class="open-gift-btn" data-bs-dismiss="modal">
+            Close with Love ♡
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jzmGPe9aKkh1LrUZFnNJBf6LZNBX"
+          crossorigin="anonymous"></script>
+
+  <!-- App Scripts (config must be first) -->
+  <script src="js/config.js"></script>
+  <script src="js/countdown.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/music.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/surprises.js"></script>
+  <script src="js/pages.js"></script>
+  <script src="js/main.js"></script>
+
+
+
+</body>
+</html>
