@@ -19,8 +19,8 @@ const CONFIG = {
   heroSubtitle: "Today, the world celebrates someone who makes my world more beautiful.",
 
   // ── Music Player ───────────────────────────────────────────
-  musicSrc: "assets/music/romantic.mp3",
-  musicTitle: "Our Song ♪",
+  musicSrc: "assets/music/Remo - Sirikkadhey Bgm.mp3",
+  musicTitle: "Remo - Sirikkadhey BGM ♪",
 
   // ── Our Beautiful Little Memories Photo Gallery ───────────
   // Supports 80+ photos with categories, captions, quotes, and full-screen view

@@ -70,7 +70,7 @@ const MusicPlayer = (() => {
     const domAudio = document.getElementById('bgMusic');
     const src = (typeof CONFIG !== 'undefined' && CONFIG.musicSrc)
       ? CONFIG.musicSrc
-      : 'assets/music/romantic.mp3';
+      : 'assets/music/Remo - Sirikkadhey Bgm.mp3';
 
     audio = domAudio || new Audio(src);
     audio.loop = true;
